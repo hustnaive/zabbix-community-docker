@@ -14,6 +14,8 @@ zabbix-db:
   environment:
     - MARIADB_USER=zabbix
     - MARIADB_PASS=my_password
+  ports:
+    - "3306:3306"
 
 zabbix-server:
   #image: zabbix/zabbix-2.4:latest
